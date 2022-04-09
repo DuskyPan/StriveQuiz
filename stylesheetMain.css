@@ -2,6 +2,10 @@ body {
 	background-color: #8b0000;
 }
 
+ul {
+	background-color: #FFFFFF;
+}
+
 .navBar ul {
 	background-color: #FFFFFF;
 	overflow: hidden;
@@ -18,7 +22,6 @@ body {
 	text-align: center;
 	text-decoration: none;
 	display:block;
-	
 }
 
 .navBar a:hover {
@@ -39,6 +42,9 @@ h1 {
 	font-size: 50px;
 }
 
-.sol {
-	text-align: center;
+.soldude {
+	display:block;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
