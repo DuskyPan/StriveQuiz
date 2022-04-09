@@ -2,9 +2,11 @@ body {
 	background-color: #8b0000;
 }
 
+.navBar {
+	background-color: #FFFFFF;
+}
 
 .navBar ul {
-	background-color: #FFFFFF;
 	overflow: hidden;
 	list-style-type:none;
 	margin: 0;
