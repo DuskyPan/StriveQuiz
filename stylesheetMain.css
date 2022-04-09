@@ -32,11 +32,12 @@ body {
 
 .mainTexts {
 	text-align: center;
-	color: #FFFFFF;
+	
 }
 
 #introText {
 	font-size:20;
+	color: #FFFFFF;
 }
 
 h1 {
