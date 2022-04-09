@@ -2,10 +2,6 @@ body {
 	background-color: #8b0000;
 }
 
-.navBar {
-	background-color: #FFFFFF;
-}
-
 .navBar ul {
 	background-color: #FFFFFF;
 	overflow: hidden;
@@ -32,15 +28,13 @@ body {
 
 .mainTexts {
 	text-align: center;
-	
+	color: #FFFFFF;
 }
 
 #introText {
 	font-size:20px;
-	color: #FFFFFF;
 }
 
 h1 {
 	font-size: 50px;
-	color: #FFFFFF;
 }
