@@ -1,13 +1,11 @@
+@font-face { font-family: NothingClean; src: url('Nothing Clean.otf'); } 
+
 body {
 	background-color: #8b0000;
 }
 
-ul {
-	background-color: #FFFFFF;
-}
-
 .navBar ul {
-	background-color: #FFFFFF;
+	background-color: #161919; 
 	overflow: hidden;
 	list-style-type:none;
 	margin: 0;
@@ -32,6 +30,7 @@ ul {
 .mainTexts {
 	text-align: center;
 	color: #FFFFFF;
+	font-family: NothingClean;
 }
 
 #introText {
