@@ -1,0 +1,38 @@
+.choice {
+	display: flex;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	font-size: 2rem;
+	border: 0.2rem solid rgba(255, 255, 255, 1);
+}
+
+.answer-button {
+	font-size: 1.8rem;
+	width: 100%;
+	text-align: center;
+	border: solid #4f0000;
+	text-decoration: none;
+	color:gray;
+	background-color: #161919;
+	
+}
+
+.choice:hover {
+	cursor: pointer;
+	box-shadow: 0 0.2rem 1rem 0 rgba(255, 255, 255, 1);
+	transform: translateY(-0.3rem);
+	transition: transform 100ms;
+}
+
+.prefix{
+	color: #8b0000;
+	background-color: #fcf0f0;
+	padding: 1.5rem 2.5rem;
+}
+
+.btn-grid {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 1rem;
+	margin: 2rem 0;
+}
