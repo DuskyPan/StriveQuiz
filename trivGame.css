@@ -1,3 +1,14 @@
+.quiz-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+
 .choice {
 	display: flex;
 	margin-bottom: 0.5rem;
@@ -7,14 +18,15 @@
 }
 
 .answer-button {
-	font-size: 1.8rem;
-	width: 100%;
+	padding: 1.5rem;
+	width:100%;
 	text-align: center;
-	border: solid #4f0000;
-	text-decoration: none;
-	color:gray;
-	background-color: #161919;
-	
+	font-size: 1.8rem;
+}
+
+.col {
+	color: #fff5f5;
+	background-color: #1f1e1e;
 }
 
 .choice:hover {
@@ -30,9 +42,48 @@
 	padding: 1.5rem 2.5rem;
 }
 
+h1, h2, h3, h4, h5 {
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 4.8rem;
+	color: #161919;
+	margin-bottom: 5rem;
+}
+
+h3 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
 .btn-grid {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	gap: 1rem;
 	margin: 2rem 0;
+}
+
+.wrong {
+	background-color: #e3a600; /*#750000*/
+}
+
+.right {
+	background-color: #155c1b;
+}
+
+/*Board Display*/
+
+#board {
+	display: flex;
+	justify-content: space-between;
+}
+
+.b-type {
+	text-align:center;
+	font-size: 1.8rem;
+}
+
+.board-text {
+	text-align: center;
 }
