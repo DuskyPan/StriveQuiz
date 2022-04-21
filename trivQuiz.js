@@ -4,7 +4,7 @@ const questionCount = document.getElementById('questionCount');
 const livesCountText = document.getElementById('livesCount');
 
 const CORRECT_POINTS = 1;
-const MAX_QUESTIONS = 5;
+const MAX_QUESTIONS = 15;
 const MAX_LIVES = 3;
 
 let currQuestion = {};
