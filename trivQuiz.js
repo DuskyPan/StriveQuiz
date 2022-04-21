@@ -8,7 +8,7 @@ const MAX_QUESTIONS = 15;
 const MAX_LIVES = 3;
 
 let currQuestion = {};
-let accAnswer = true;
+let accAnswer = false;
 let questionIndex = 0;
 let availableQs =  [];
 let currentLives = 0;
