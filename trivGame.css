@@ -1,3 +1,13 @@
+@font-face { font-family: NothingClean; src: url('Nothing Clean.otf'); }
+
+body {
+	background-image: url("sol background.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .quiz-container {
 	width: 100vw;
 	height: 100vh;
@@ -7,7 +17,6 @@
 	max-width: 80rem;
 	margin: 0 auto;
 }
-
 
 .choice {
 	display: flex;
@@ -36,12 +45,18 @@
 	transition: transform 100ms;
 }
 
+#question {
+	color: #fff2f2;
+}
+
 .prefix{
 	color: #8b0000;
 	background-color: #fcf0f0;
 	padding: 1.5rem 2.5rem;
 }
 
+
+/*Styling for Titles*/
 h1, h2, h3, h4, h5 {
 	margin-bottom: 1rem;
 }
@@ -82,8 +97,24 @@ h3 {
 .b-type {
 	text-align:center;
 	font-size: 1.8rem;
+	color: #fff2f2;
 }
 
 .board-text {
 	text-align: center;
+	color: #fff2f2;
+}
+
+/*Win Page*/
+
+.displayText {
+	font-family: NothingClean;
+	font-size: 6rem;
+	color: #fcf0f0;
+	margin-bottom: 3.5rem;
+}
+
+.buttonMenu {
+	display: flex;
+	flex-direction: column;
 }

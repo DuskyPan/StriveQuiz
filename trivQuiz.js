@@ -13,54 +13,16 @@ let questionIndex = 0;
 let availableQs =  [];
 let currentLives = 0;
 
-let questionBank = [
+let questionBank = [];
 
-	{
-		question: "What was Faust called in the older Guilty Gear titles?",
-		answer1: "Dr.Baldhead",
-		answer2: "Mr.James",
-		answer3: "Col.Sanders",
-		answer4: "Mr.Simon",
-		correct: 1
-	},
-	
-	{
-		question: "Who is Kliff Undersn's foster child?",
-		answer1: "Ky",
-		answer2: "Chipp",
-		answer3: "Testament",
-		answer4: "Tyr",
-		correct: 3
-	},
-	
-	{
-		question: "What animal does May call upon when activating her super in Strive?",
-		answer1: "Dolphin",
-		answer2: "Whale",
-		answer3: "Shark",
-		answer4: "Otter",
-		correct: 2
-	},
-	
-	{
-		question: "Which Queen album does Sol Badguy love listening to?",
-		answer1: "Made in Heaven",
-		answer2: "The Game",
-		answer3: "News of the World",
-		answer4: "Sheer Heart Attack",
-		correct: 4
-	},
-	
-	{
-		question: "What position of power does Chipp the ninja eventually want to obtain?",
-		answer1: "King",
-		answer2: "Assassin's Syndicate Leader",
-		answer3: "President",
-		answer4: "Baker",
-		correct: 3
-	}
-];
-
+fetch("questionBank.json")
+	.then( rep => {
+		return rep.json();
+	})
+	.then(loadQs => {
+		questionBank = loadQs;
+		startQuiz();
+});
 
 startQuiz = () => {
 	questionIndex = 0;
@@ -73,12 +35,12 @@ startQuiz = () => {
 //go to next question
 getNextQuestion = () => {
 	if (currentLives == 0) {
-		return window.location.assign("/gameOver.html"); //get game over page when user loses all lives
+		return window.location.assign("trivLoss.html"); //get game over page when user loses all lives
 	}
 	
 	
 	if (availableQs.length == 0 || questionIndex >= MAX_QUESTIONS) {
-		return window.location.assign("/trivResults.html"); //get results page when user is done
+		return window.location.assign("trivWin.html"); //get results page when user is done
 	}
 	
 	questionIndex++;
@@ -131,6 +93,4 @@ answers.forEach(choice => {
 loseLife = () => {
 	currentLives = currentLives - 1;
 	livesCountText.innerText = currentLives;
-}
-
-startQuiz();
+};

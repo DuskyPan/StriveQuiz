@@ -12,6 +12,14 @@
 	
 }
 
+#trivBg {
+	background-image: url("solBg1.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 h1, h2, h3, h4, h5 {
 	margin-bottom: 1rem;
 }
